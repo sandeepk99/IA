@@ -1,0 +1,13 @@
+applications:
+- name: IA
+  memory: 1G
+  instances: 1
+  path: target/IA-0.0.1-SNAPSHOT.jar
+  random-route: true
+  services:
+  - service-registry
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: https://eureka-fc919389-9031-4eb0-8e7f-91bc132aac57.cfapps.io
